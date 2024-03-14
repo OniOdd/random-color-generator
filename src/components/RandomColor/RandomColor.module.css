@@ -1,3 +1,35 @@
-.container {}
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
 
-.button {}
+.button {
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: 500;
+  background-color: #e0e0e0;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color .25s;
+}
+.button:not(:last-child) {
+  margin-right: 20px;
+}
+.button:focus-visible,
+.button:hover {
+  border-color: #d18f39;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #fff;
+}
